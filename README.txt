@@ -12,7 +12,7 @@ installation
 To use the Task Manager App, you can build it from the source code. Here are the steps to build the app:
 
 Clone the repository to your local machine:
-git clone https://github.com/your-username/task-manager.git
+git clone https:https://github.com/BasharAZ1/TaskToDo
 Open the project in Android Studio.
 Build the project and run it on an emulator or a physical device.
 License
