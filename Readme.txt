@@ -8,12 +8,10 @@ To edit an existing task, click on the task in the task list, make the desired c
 To delete a task, click on the task in the task list and then click on the "Delete" button.
 To view tasks sorted by date or title, click on the "Settings" button and select the desired sorting option.
 To mark a task as completed, click on the "Done" button next to the task in the task list.
-nstallation
+installation
 To use the Task Manager App, you can build it from the source code. Here are the steps to build the app:
 
 Clone the repository to your local machine:
-bash
-
 git clone https://github.com/your-username/task-manager.git
 Open the project in Android Studio.
 Build the project and run it on an emulator or a physical device.
