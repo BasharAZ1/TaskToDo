@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addnotefrag"
+    android:background="#F4F4F4"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="198dp"
+        android:background="@color/ColorPrimaryDark"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titlepage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Create new note"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="20dp"
+            android:background="#131E69" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="-100dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/item_design"
+        android:orientation="vertical"
+        android:paddingTop="22dp"
+        android:paddingBottom="22dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/addtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Add Title"
+                android:textColor="@color/ColorPrimaryDark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/AddtitleNote"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/note_unselected_task"
+                android:hint="What you do?"
+                android:inputType="text"
+                android:paddingLeft="12dp"
+                android:textColorHint="#B5B5B5B5" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Description"
+                android:textColor="@color/ColorPrimaryDark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/AddDescreptionNote"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/note_unselected_task"
+                android:hint="How to?"
+                android:inputType="textMultiLine"
+                android:paddingLeft="12dp"
+                android:textColorHint="#B5B5B5B5" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="TimeLine"
+                android:textColor="@color/ColorPrimaryDark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/in_date"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="82dp"
+                android:translationY="-50dp" />
+
+            <Button
+                android:id="@+id/date"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:drawableBottom="@android:drawable/ic_menu_month"
+                android:onClick="SelectDate"
+                android:textColor="#FFF"
+                android:translationX="270dp"
+                android:translationY="-100dp" />
+
+            <EditText
+                android:id="@+id/in_time"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="82dp"
+                android:translationY="-120dp" />
+
+            <Button
+                android:id="@+id/time"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:drawableBottom="@android:drawable/ic_menu_recent_history"
+                android:textColor="#FFF"
+                android:translationX="270dp"
+                android:translationY="-180dp" />
+
+            <Button
+                android:id="@+id/cancelB"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:background="#D6D6D6"
+                android:drawableBottom="@android:drawable/ic_menu_close_clear_cancel"
+                android:onClick="Cancelled"
+                android:text="@android:string/cancel"
+                android:textColor="#FFFFFF"
+                android:translationX="120dp"
+                android:translationY="-120dp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addNoteButton"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        android:text="Add note"
+        android:textAllCaps="true"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        android:translationY="-150dp" />
+
+
+</LinearLayout>
